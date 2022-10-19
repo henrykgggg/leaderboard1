@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
+    <link rel="stylesheet" href="/styles.css">
+    <title>LeaderBoard</title>
 </head>
-
 <body>
-    <header>
-        <div class="title">
-            <h1>LEADERBOARD</h1>
-        </div>
-
-        <div class="content">
-            <section class="board-section">
-                <article class="board-refresh-btn">
-                    <h2>Recent scores</h2>
-                    <button>Refresh</button>
-                </article>
-                <article class="board-table">
-                    <ul class="score">
-                        <li class="one"><a href="#">name: 100</a></li>
-                        <li class="two"><a href="#">name: 50</a></li>
-                        <li class="one"><a href="#">name: 150</a></li>
-                        <li class="two"><a href="#">name: 30</a></li>
-                        <li class="one"><a href="#">name: 300</a></li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="score-board">
-                <h2> Add your score </h2>
-                <form action="#">
-                    <input type="text" placeholder="Your name"><br><br>
-                    <input type="text" placeholder="Your score">
-                </form>
-                <div class="add-score">
-                    <button class= "submit-btn" type="submit">Submit</button>
+    <div class="container">
+        <header>
+            <h1>
+                Leaderboard
+            </h1>
+        </header>
+        <main>
+            <div class="container_main">
+                <div class="recent_score_part">
+                    <div class="title">
+                        <h2>Recent scores</h2>
+                        <button  type="button" class="refresh" >refresh</button>
+                    </div>
+                    <div class="score">
+                        <ul id="list_of_players">
+                            <!-- dynamic part -->
+                        </ul>
+                    </div>
                 </div>
-            </section>
-        </div>
+                <div class="add_your_score">
+                   <div class="title_form">
+                    <h2>Add your score</h2>
+                   </div>
+                   <form>
+                    <input type="text" class = 'your_score'  required  placeholder="your name" name="name"> <br><br>
+                    <input type="number" class = 'your_score'  required  placeholder="your score" name="score"><br><br>
+                    <button type = 'submit' class="submit_btn">submit</button>
+                    <p class="message"></p>
+                   </form>
+                </div>
+            </div>
+            
+        </main>
 
-    </header>
-    <script type="module" src="./style.css"></script>
+        <footer></footer>
+        
+    </div>
+    <script src="/script.js"></script>
 </body>
-
 </html>
