@@ -1,110 +1,81 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.container {
+  border: 2px solid rgb(0, 0, 0);
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  overflow: scroll;
 }
 
-header {
+.container h1 {
+  width: 70%;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.container_main {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 5vh;
-  border: solid 2px black;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
 }
 
 .title {
   display: flex;
-  flex-direction: row;
-  align-self: start;
-  padding-left: 3vh;
-  padding-top: 3vh;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  align-self: start;
-  padding-left: 10vh;
-  padding-top: 7vh;
-  align-items: flex-start;
-  gap: 50px;
-}
-
-.board-section {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.score-board {
-  display: flex;
-  flex-direction: column;
-}
-
-.board-refresh-btn {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
-.board-refresh-btn button {
-  font-size: 20px;
-  border: 3px solid;
+.score {
+  border: 2px solid black;
 }
 
-form {
-  margin-top: 20px;
+li:nth-child(even) {
+  background-color: #fff;
 }
 
-.board-table {
-  display: flex;
-  flex-direction: column;
-  height: 33vh;
-  border: 2px solid rgb(91, 88, 88);
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+li:nth-child(odd) {
+  background-color: #eee;
 }
 
 ul {
-  display: flex;
-  align-items: flex-start;
   list-style: none;
-  flex-direction: column;
-}
-
-li {
   margin: 0;
-  font-size: 20px;
-  line-height: 40px;
+  padding: 0;
+  background-color: rgb(0, 255, 213);
 }
 
-a {
-  text-decoration: none;
-  color: black;
+li p {
+  background-color: aqua;
 }
 
-.one {
-  background: rgb(209, 207, 207);
-  width: 100%;
+button,
+input[type="submit"] {
+  outline: none;
+  border: 1px var(--black) solid;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px var(--black);
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
 }
 
-.add-score {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  margin-top: 5vh;
-}
+button:hover,
+input[type="submit"]:hover { background-color: var(--gray); }
 
 input {
-  border: 3px solid;
+  outline: none;
+  padding: 10px 20px;
+  border: 1px var(--black) solid;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  width: calc(100% - 40px);
+  border-radius: 5px;
 }
 
-.submit-btn {
-  border: 3px solid;
+input::placeholder {
+  color: var(--black);
 }
