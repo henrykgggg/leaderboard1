@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>LeaderBoard</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Leaderboard
+            </h1>
+        </header>
+        <main>
+            <div class="container_main">
+                <div class="recent_score_part">
+                    <div class="title">
+                        <h2>Recent scores</h2>
+                        <button  type="button" class="refresh" >refresh</button>
+                    </div>
+                    <div class="score">
+                        <ul id="list_of_players">
+                            <!-- dynamic part -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="add_your_score">
+                   <div class="title_form">
+                    <h2>Add your score</h2>
+                   </div>
+                   <form>
+                    <input type="text" class = 'your_score'  required  placeholder="your name" name="name"> <br><br>
+                    <input type="number" class = 'your_score'  required  placeholder="your score" name="score"><br><br>
+                    <button type = 'submit' class="submit_btn">submit</button>
+                    <p class="message"></p>
+                   </form>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer></footer>
+        
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
