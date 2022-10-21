@@ -1,0 +1,93 @@
+.container {
+  border: 2px solid rgb(0, 0, 0);
+  background-image: url(/images/act.jpg);
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.container h1 {
+  width: 70%;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.container_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.score {
+  border: 2px solid black;
+}
+
+li:nth-child(even) {
+  background-color: #fff;
+}
+
+li:nth-child(odd) {
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(1, 74, 42);
+}
+
+li p {
+  background-color: aqua;
+}
+
+button {
+  display: block;
+  position: relative;
+  margin: 0.5em 0;
+  cursor: pointer;
+  background: #7be1ee;
+  border: none;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  background-color: #fbfbfb;
+}
+
+button:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
+input {
+  outline: none;
+  padding: 10px 20px;
+  border: 1px var(--black) solid;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  width: calc(100% - 40px);
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: var(--black);
+}
